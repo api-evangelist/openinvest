@@ -1,8 +1,27 @@
 aid: openinvest
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/openinvest.png
 name: OpenInvest
-description: OpenInvest is a company surfaced as a portfolio company of a16z, y-combinator and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  OpenInvest was a values-based / ESG investing fintech (Y Combinator and a16z backed)
+  that let advisors and investors build and manage portfolios aligned to social and
+  environmental causes. It was acquired by J.P. Morgan Chase in 2021 and folded into
+  J.P. Morgan's wealth-management and Private Bank offerings. Its standalone product and
+  any developer surface were discontinued: the openinvest.com domain now resolves to
+  J.P. Morgan (www.openinvest.com is a CNAME to privatebank.jpmorgan.com), and no public
+  OpenInvest developer portal, documentation, API reference, SDKs, or .well-known
+  metadata could be found during enrichment. Retained in the API Evangelist network as an
+  acquired-company record with no live API surface.
 url: https://raw.githubusercontent.com/api-evangelist/openinvest/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,14 +30,27 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: jpmorgan-chase
+x-acquired-note: openinvest.com now redirects to J.P. Morgan Private Bank; no independent API surface.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fintech
+- Investing
+- ESG
+- Wealth Management
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
